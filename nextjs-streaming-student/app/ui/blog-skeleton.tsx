@@ -1,0 +1,2 @@
+export function BlogCardSkeleton() { return <div className="blog-card skeleton-card" aria-label="กำลังโหลดบทความ"><div className="skeleton skeleton-tag"/><div className="skeleton skeleton-title"/><div className="skeleton skeleton-line"/><div className="skeleton skeleton-line short"/><div className="skeleton skeleton-button"/></div>; }
+export function BlogListSkeleton() { return <div className="blog-grid">{Array.from({length: 6}, (_, i) => <BlogCardSkeleton key={i} />)}</div>; }
